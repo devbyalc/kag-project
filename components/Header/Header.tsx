@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const navs = [
     { nav: "HOME", href: "/" },
     { nav: "RECIPES", href: "/recipes" },
-    { nav: "CATEGORIES", href: "/recipes/category" },
+    { nav: "CATEGORIES", hreof: "/recipes/category" },
     { nav: "ABOUT", href: "/about" },
   ];
 
@@ -21,13 +21,14 @@ const Header: React.FC = () => {
         <Box
           sx={{
             display:'flex',
-            justifyContent:'space-between',
             flexDirection: "row",
-            m: 5,
+            justifyContent:"space-between",
+            m: 3,
+            alignItems:'center',
           }}
         >
-          <Navbar/>
           <Box>LOGO</Box>
+          <Navbar/>
         </Box>
   );
 };
