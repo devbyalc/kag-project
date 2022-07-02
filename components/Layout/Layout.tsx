@@ -10,10 +10,8 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Container>
     <Grid container direction="column">
       <Grid  item>
-        {/* <Header /> */}
         <ResponsiveAppBar/>
       </Grid>
       <Grid item>
@@ -29,7 +27,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <Footer/>
       </Grid>
     </Grid>
-    </Container>
   );
 };
 

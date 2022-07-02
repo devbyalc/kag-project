@@ -1,14 +1,12 @@
+import { Grid } from '@mui/material'
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Banner from '../components/Banner/Banner'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-     Welcome to Recipe!!!
-     ~ on Construction~
-    </div>
+    <Grid container>
+      <Grid item><Banner/></Grid>
+    </Grid>
   )
 }
 
