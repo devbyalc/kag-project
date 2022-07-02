@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
      }}
    >
      {navs.map((nav: Nav) => (
-      <MenuItem onClick={handleClose} sx={{ color: "primary.dark"}}>
+      <MenuItem key={nav.nav} onClick={handleClose} sx={{ color: "primary.dark"}}>
         <Link href={nav.href}>
           <a className={styles.links}>
             <Typography variant="subtitle1" display="inline">
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
       }}
     >
       {navs.map((nav: Nav) => (
-        <Link href={nav.href}>
+        <Link key={nav.nav} href={nav.href}>
           <a className={styles.links}>
             <Typography variant="body1" display="inline">
               {nav.nav}

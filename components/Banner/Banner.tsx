@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
   return (
     <Box className={styles.banner} >
        <div className={styles.radialBackground}></div>
-      <Image className={styles.bannerImg} src={bannerSample}/>
+      <Image className={styles.bannerImg} src={bannerSample} alt="Banner Image"/>
       <h1 className={styles.heroText}>{sampleText}</h1>
     </Box>
   );
