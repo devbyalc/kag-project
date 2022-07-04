@@ -24,7 +24,7 @@ const AppBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-main-900"
           >
             <li>
               <Link href={"/"}>
@@ -48,10 +48,10 @@ const AppBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">WokAWish</a>
+        <a className="btn btn-ghost normal-case text-xl text-main-900">WokAWish</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0">
+        <ul className="menu menu-horizontal p-0 text-main-900">
           <li>
             <Link href={"/"}>
               <a className="active:bg-main-500">Home</a>
