@@ -1,12 +1,7 @@
 import Link from "next/link";
 
 const AppBar = () => {
-  const navs = [
-    { nav: "HOME", href: "/" },
-    { nav: "RECIPES", href: "/recipes" },
-    { nav: "CATEGORIES", href: "/recipes/category" },
-    { nav: "ABOUT", href: "/about" },
-  ];
+    
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
