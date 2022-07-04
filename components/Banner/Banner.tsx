@@ -1,7 +1,6 @@
 import styles from "./Banner.module.css";
 import Image from "next/image";
 import bannerSample from "../../public/banner-sample.png";
-import { Box } from "@mui/material";
 
 const Banner: React.FC = () => {
 
