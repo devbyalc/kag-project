@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchBar from "../SearchBar/SearchBar";
 
 const AppBar = () => {
     
@@ -73,6 +74,9 @@ const AppBar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="navbar-end">
+        <SearchBar/>
       </div>
     </div>
   );
