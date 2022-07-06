@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import bannerSample from "../../public/banner-sample.png";
+
 const Card: React.FC = () => {
 
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl rounded-none">
-        <figure><Image src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <figure><Image src={bannerSample} alt="Shoes" layout="intrinsic"/></figure>
         <div className="card-body items-center text-center">
           <span>May 17,2022</span>
           <h2 className="card-title">Chinese Soup Dumplings <br/>(Xiao Long Bao)!</h2>
