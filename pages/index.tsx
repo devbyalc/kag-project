@@ -14,12 +14,10 @@ const Home: NextPage = () => {
       <div>
         <p className="text-2xl font-semibold mb-6">Our Latest Recipes</p>
         <CardList />
-        <div className="divider"></div>
       </div>
-      <div>
+      <div className="bg-light-200 border-none mt-5 p-4">
       <p className="text-2xl font-semibold mb-6">Recipe Collections</p>
       <RecipeCollections/>
-      <div className="divider"></div>
       </div>
     </div>
   );

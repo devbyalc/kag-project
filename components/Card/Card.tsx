@@ -1,16 +1,22 @@
 import Image from 'next/image';
-import bannerSample from "../../public/banner-sample.png";
 import Button from '../UI/Button/Button';
 
-const Card: React.FC = () => {
+interface CardProps{
+  img:any,
+  date?:string,
+  title?:string,
+  description?:string
+}
+
+const Card: React.FC<CardProps> = ({img,date,title,description}) => {
 
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl rounded-none">
-        <figure><Image src={bannerSample} alt="Shoes" layout="intrinsic"/></figure>
+        <figure><Image src={img} alt={title} layout="intrinsic"/></figure>
         <div className="card-body items-center text-center">
-          <span>May 17,2022</span>
-          <h2 className="card-title">Chinese Soup Dumplings <br/>(Xiao Long Bao)!</h2>
-          <p>Chinese Soup Dumplings, or xiaolongbao (小笼包), are perhaps the most perfect single bite of food ever conceived by man. This tantalizing, dreamy snack is probably the most famous dish to come out of the Jiangnan region of China. </p>
+          <span>{date}</span>
+          <h2 className="card-title">{title}</h2>
+          <p>{description}</p>
           <div className="card-actions justify-end">
             <Button content="Start Cooking >" onButtonClick={()=> console.log("clicked")} type="main"/>
           </div>
