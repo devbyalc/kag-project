@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import bannerSample from "../../public/banner-sample.png";
+import Button from '../UI/Button/Button';
 
 const Card: React.FC = () => {
 
@@ -11,7 +12,7 @@ const Card: React.FC = () => {
           <h2 className="card-title">Chinese Soup Dumplings <br/>(Xiao Long Bao)!</h2>
           <p>Chinese Soup Dumplings, or xiaolongbao (小笼包), are perhaps the most perfect single bite of food ever conceived by man. This tantalizing, dreamy snack is probably the most famous dish to come out of the Jiangnan region of China. </p>
           <div className="card-actions justify-end">
-            <button className="btn bg-main-500 border-none">Start Cooking {">"}</button>
+            <Button content="Start Cooking >" onButtonClick={()=> console.log("clicked")} type="main"/>
           </div>
         </div>
       </div>

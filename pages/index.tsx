@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Banner from "../components/Banner/Banner";
 import Card from "../components/Card/Card";
 import CardList from "../components/Card/CardList";
+import RecipeCollections from "../components/RecipeCollections/RecipeCollections";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,11 @@ const Home: NextPage = () => {
         <p className="text-2xl font-semibold mb-6">Our Latest Recipes</p>
         <CardList />
         <div className="divider"></div>
+      </div>
+      <div>
+      <p className="text-2xl font-semibold mb-6">Recipe Collections</p>
+      <RecipeCollections/>
+      <div className="divider"></div>
       </div>
     </div>
   );
