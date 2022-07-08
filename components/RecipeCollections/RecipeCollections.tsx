@@ -11,7 +11,7 @@ const RecipeCollections: React.FC = () => {
     { imgSource: bannerSample, label: "Festive Foods" },
   ];
   return (
-    <div className="grid grid-cols-3 justify-items-center gap-3">
+    <div className="grid lg:grid-cols-3 justify-items-center gap-3">
       {sample.map((item) => (
         <RecipeCollectCard
           imgSource={item.imgSource}
