@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode:false,
   theme: {
     colors: {
       main: {
@@ -18,7 +19,7 @@ module.exports = {
         800: "#c6603f",
         900: "#bc5635",
       },
-      secondary: {
+      light: {
         50: "#fffafa",
         100: "#fff0f0",
         200: "#ffe6e6",
