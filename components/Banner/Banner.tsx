@@ -1,6 +1,7 @@
 import styles from "./Banner.module.css";
 import Image from "next/image";
 import bannerSample from "../../public/banner-sample.png";
+import Button from "../UI/Button/Button";
 
 const Banner: React.FC = () => {
 
@@ -17,7 +18,7 @@ const Banner: React.FC = () => {
           <p className="mb-5">
             See you in August 2022
           </p>
-          <button className="btn bg-main-900 glass">Random Recipe</button>
+            <Button content="Recipe Collection" glass={true} onButtonClick={()=> console.log("clicked")} type="main"/>
         </div>
       </div>
     </div>
