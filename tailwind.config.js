@@ -4,7 +4,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode:"class",
   theme: {
     colors: {
       main: {
@@ -45,5 +44,8 @@ module.exports = {
       },
     },
   },
+  daisyui: {
+    themes: false,
+ },
   plugins: [require("daisyui")],
 };
