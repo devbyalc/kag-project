@@ -1,5 +1,7 @@
 import Link from "next/link";
 import SearchBar from "../SearchBar/SearchBar";
+import Image from 'next/image';
+import logo from "../../public/website_logo.png";
 
 const AppBar = () => {
     
@@ -49,7 +51,7 @@ const AppBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl text-main-900">WokAWish</a>
+        <a className="btn btn-ghost normal-case text-xl text-main-900"><Image src={logo} alt="Wok a wish logo" width={72} height={50}/></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-main-900">
